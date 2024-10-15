@@ -5,10 +5,11 @@ Curl –x ‘POST’ ‘http://IP/?start=’ –data ‘start=flag.php’ Alien-
 
 
 File:/etc/passwd      File:/home/ctf/app.py
-curl -X POST \
--H 'Host: company.tld' \
---data 'url=http://34.141.113.155:32567' \
-http://34.141.113.155:32567/
+
+curl -X POST http://34.141.113.155:32567/ \
+  -H "Host: company.tld" \
+  -d "url=http://example.com"
+
 
 
                                                    LFI  Ultra-Crawler

